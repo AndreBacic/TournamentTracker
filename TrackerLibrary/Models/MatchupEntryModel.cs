@@ -15,7 +15,7 @@ namespace TrackerLibrary.Models
         /// The unique identifier for the matchup entry.
         /// </summary>
         public int Id { get; set; }
-        public int TeamCompeteingId { get; set; }
+        public int TeamCompetingId { get; set; }
 
         /// <summary>
         /// Represents one team in the matchup.

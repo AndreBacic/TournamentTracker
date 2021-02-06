@@ -260,9 +260,9 @@ namespace TrackerLibrary.DataAccess
 
                         foreach (var me in m.Entries)
                         {
-                            if (me.TeamCompeteingId > 0)
+                            if (me.TeamCompetingId > 0)
                             {
-                                me.TeamCompeting = allTeams.Where(x => x.Id == me.TeamCompeteingId).First();
+                                me.TeamCompeting = allTeams.Where(x => x.Id == me.TeamCompetingId).First();
                             }
                             // Parent matchup is already loaded, so we cann just grab it without creating a loop
                             if (me.ParentMatchupId > 0)
